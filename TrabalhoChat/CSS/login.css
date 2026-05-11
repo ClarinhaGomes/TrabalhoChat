@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-image: url("../IMG/fundohogwarts.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f5e6c8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.564); /* transparência */
+  backdrop-filter: blur(12px); /* efeito vidro */
+  -webkit-backdrop-filter: blur(12px);
+  padding: 15px 30px;
+  border-bottom: 2px solid gold;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.12); /* transparência */
+  backdrop-filter: blur(12px); /* efeito vidro */
+  -webkit-backdrop-filter: blur(12px);
+  padding: 60px; /* mais espaço interno */
+  border-radius: 20px;
+  border: 1px solid rgba(255, 215, 0, 0.7);
+  width: 380px; /* um pouco maior */
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid gold;
+  background: #1a1a1a;
+  color: white;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  
+  background: gold;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.564);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-top: 2px solid gold;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 130px;
+  padding: 40px 60px;
+  color: #f5e6c8;
+}
+
+.footer-left img {
+  width: 180px;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+footer a {
+  color: gold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.tecnologias {
+  font-size: 14px;
+}
+.senha-container {
+  position: relative;
+  width: 100%;
+}
+
+.senha-container input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.olho {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: gold;
+  font-size: 18px;
+}
+
+

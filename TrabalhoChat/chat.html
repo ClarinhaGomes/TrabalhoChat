@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hogwarts Chat</title>
+
+  <link rel="stylesheet" href="CSS/chatstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <div class="page">
+    <header class="chat-header">
+      <h1>WizzApp</h1>
+      <button class="logout-btn" onclick="logout()">
+        Sair
+      </button>
+    </header>
+
+    <div class="main">
+      <div class="sidebar">
+
+        <div class="profile">
+          <img src="IMG/perfilusuario.png" alt="avatar">
+          <div class="profile-name" id="profileName"></div>
+        </div>
+
+        <div class="chat-item active" onclick="selectChat('chat1', this)">Sala Precisa</div>
+        <div class="chat-item" onclick="selectChat('chat2', this)">Manual Bruxo</div>
+      </div>
+
+      <div class="chat-container">
+        <div class="chat-header" id="chatTitle">Sala Precisa</div>
+        <div class="chat-messages" id="chatMessages"></div>
+
+        <div class="chat-input-container">
+          <input type="text" id="input" class="chat-input" placeholder="Digite sua magia...">
+          <button onclick="sendMessage()" class="send-button">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+
+      <div class="footer-left">
+        <img src="IMG/logo.png" alt="Logo IFRN">
+      </div>
+
+      <div class="footer-center">
+        <p>IFRN campus Santa Cruz</p>
+        <p>Trabalho de Programação para Internet</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+      </div>
+
+      <div class="footer-right">
+        <p><strong>Desenvolvedores:</strong></p>
+        <p><a href="dev.html">Ver equipe de desenvolvedores</a></p>
+
+        <p><strong>Tecnologias usadas:</strong></p>
+        <p class="tecnologias">
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank">HTML</a> •
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank">CSS</a> •
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank">JavaScript</a> •
+          <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage"
+            target="_blank">LocalStorage</a>
+        </p>
+      </div>
+
+    </footer>
+  </div>
+  <script src="JS/chat.js"></script>
+</body>
+
+</html>
